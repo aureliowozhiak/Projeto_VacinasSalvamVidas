@@ -6,10 +6,11 @@
 
  - Objetivo do projeto
  - Introdução
-    - A popularização da internet
     - O movimento antivacina
-    - Porque o SUS é importante?
+    - Por que o SUS é importante?
+        - Programa Nacional de Imunizações (PNI)
     - Dados públicos
+        - Tabnet e o DataSUS
  - Nota técnica e Origem dos dados
  - Importação de bibliotecas
  - Carregamento das bases de dados
