@@ -10,21 +10,21 @@
 ---
 ## 👉 Visão geral do projeto:
 
- - 🎯 Objetivo do projeto
- - ⭐ Introdução
-    - 🚫 O movimento antivacina
-    - 👍 Por que o SUS é importante?
-        - 💉 Programa Nacional de Imunizações (PNI)
-    - 🎲 Dados públicos
-        - 📊 Tabnet e o DataSUS
- - 📚 Importação de bibliotecas
- - 📝 Nota técnica e Origem dos dados
- - 👨‍💻 Carregamento e Processamento dos dados
- - 🤔 Levantamento de Hipóteses
- - 📈 Visualização dos dados
- - 🔍 Pesquisa complementar
- - 📍 Conclusão
- - 🔗 Referências
+ - Objetivo do projeto
+ - Introdução
+    - O movimento antivacina
+    - Por que o SUS é importante?
+        - Programa Nacional de Imunizações (PNI)
+    - Dados públicos
+        - Tabnet e o DataSUS
+ - Importação de bibliotecas
+ - Nota técnica e Origem dos dados
+ - Carregamento e Processamento dos dados
+ - Levantamento de Hipóteses
+ - Visualização dos dados
+ - Pesquisa complementar
+ - Conclusão
+ - Referências
  
  ---
  
