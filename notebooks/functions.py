@@ -1,5 +1,9 @@
 from io import StringIO
 import pandas as pd
+import seaborn as sns
+import datetime
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 
 ###Seção de funções adicionais para processamento
 	
@@ -217,3 +221,36 @@ def all_data_processing():
     df_casos_tuberculose_confirmados_aberto["casos"] = df_casos_tuberculose_confirmados_aberto["casos"].astype(int)
     
     return df_cobertura_vacinais_aberto, df_casos_tuberculose_confirmados_aberto
+
+## seção para definir funções de gráficos
+def grafico_cobertura_vacinais_casos_confirmados(estado: str, paleta_cobertura: str, paleta_casos: str):
+    df_cobertura_vacinais, df_casos_tuberculose = all_data_processing()
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.lineplot(data=df_cobertura_vacinais.query("estado == '" + estado + "' and ano > 2001 and ano <= 2019"), y="cobertura",
+                      x="ano", hue="estado", palette=paleta_cobertura)
+
+    plt.xticks(rotation=30)
+    plt.ylim(0, 120)
+    ax.set_title("Cobertura vacinais - " + estado)
+    ax.set_xlabel('Anos')
+    ax.set_ylabel('% de cobertura')
+    ax.yaxis.set_major_formatter(ticker.StrMethodFormatter("{x:,.0f}%"))
+    ax.get_legend().remove()
+    plt.grid(True, linestyle="--")
+
+
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.lineplot(data=df_casos_tuberculose.query("estado == '" + estado + "' and ano > 2001 and ano <= 2019"), y="casos", x="ano",
+                      hue="estado", palette=paleta_casos)
+
+    plt.xticks(rotation=30)
+    ax.set_title("Casos confirmados de tuberculose - " + estado)
+    ax.set_xlabel('Anos')
+    ax.set_ylabel('Número de casos absolutos')
+    ax.get_legend().remove()
+    plt.grid(True, linestyle="--")
+
+
+    plt.show()
