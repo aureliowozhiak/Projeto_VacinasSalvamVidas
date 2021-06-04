@@ -122,11 +122,12 @@ Esses dados coletados são referentes à seguinte tabela de Imunobiológicos com
  - Período disponíveis: 2001 - 2019
 
 Com isso, foi obitido a seguinte coleção de dados (dataset) em CSV, que se encontra nesse projeto em [datasets/Tuberculose_Ano_UF_Confirmados.csv](datasets/Tuberculose_Ano_UF_Confirmados.csv)
- ---
- ## Visualização dos dados
  
  ---
  ## Levantamento de Hipóteses
+ 
+ ---
+ ## Visualização dos dados
  
  ---
  ## Pesquisa complementar
