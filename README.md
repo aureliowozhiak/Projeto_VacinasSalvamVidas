@@ -8,23 +8,23 @@
  </p>
 
 ---
-## Visão geral do projeto:
+## 👉 Visão geral do projeto:
 
- - Objetivo do projeto
- - Introdução
-    - O movimento antivacina
-    - Por que o SUS é importante?
-        - Programa Nacional de Imunizações (PNI)
-    - Dados públicos
-        - Tabnet e o DataSUS
- - Importação de bibliotecas
- - Nota técnica e Origem dos dados
- - Carregamento e Processamento dos dados
- - Levantamento de Hipóteses
- - Visualização dos dados
- - Pesquisa complementar
- - Conclusão
- - Referências
+ - 🎯 Objetivo do projeto
+ - ⭐ Introdução
+    - 🚫 O movimento antivacina
+    - 👍 Por que o SUS é importante?
+        - 💉 Programa Nacional de Imunizações (PNI)
+    - 🎲 Dados públicos
+        - 📊 Tabnet e o DataSUS
+ - 📚 Importação de bibliotecas
+ - 📝 Nota técnica e Origem dos dados
+ - 👨‍💻 Carregamento e Processamento dos dados
+ - 🤔 Levantamento de Hipóteses
+ - 📈 Visualização dos dados
+ - 🔍 Pesquisa complementar
+ - 📍 Conclusão
+ - 🔗 Referências
  
  ---
  
@@ -36,10 +36,10 @@ Nesse projeto também será abordado conceitos sobre o negacionismo do movimento
 
 ---
 
-## Introdução
+## ⭐ Introdução
 
 ---
-### O movimento antivacina
+### 🚫 O movimento antivacina
 
 Segundo um relatório da OMS, divulgado em 2019, o movimento antivacina é considerado um dos maiores problemas a saúde global. Esse movimento vai contra todo o avançado cientifico alcançado no combate as doenças letais que podem ser evitadas, ou reduzidas, com o Programa de Imunização Nacional.
 
@@ -53,7 +53,7 @@ Muitas são as razões que uma pessoa pode ter para não se vacinar ou para não
 
 ---
 
-### Por que o SUS é importante?
+### 👍 Por que o SUS é importante?
 
 O SUS (Sistema Único de Saúde) dá o direito à saúde para qualquer cidadão brasileiro, oferecendo acesso integral, universal e gratuito a serviços de saúde.
 
@@ -65,7 +65,7 @@ Paralelamente à realização de consultas, exames e internações, o SUS també
 
 E apesar de alguns problemas nas questões de distribuição de verba pública pelo governo, o SUS é responsável por disponibilizar, gerenciar e distribuir diversas doses de vacinas anualmente para população alvo de forma completamente gratuita. 
 
-#### Programa Nacional de Imunizações (PNI)
+#### 💉 Programa Nacional de Imunizações (PNI)
 
 O Programa Nacional de Imunizações (PNI) é uma ação do Governo Federal e que tem por objetivo eliminar, por meio da vacinação em massa da população, uma série de doenças. Como resultado, entre os casos de sucesso estão a erradicação da varíola e da poliomielite do territorio nacional.
 
@@ -75,12 +75,12 @@ O PNI tem como objetivos a inclusão social, ao permitir que qualquer cidadão t
 
 ---
 
-### Dados públicos
+### 🎲 Dados públicos
 
 Dados públicos são dados que estão disponíveis para qualquer pessoa acessar, esses dados não tem nenhum tipo de controle ou privação de acesso.
 São dados públicos, geralmente dados que toda população deve ou pode ter acesso, como por exemplo, dados que indicam os gastos de parlamentares com o dinheiro público (dinheiro que provem de impostos de forma direta ou indireta).
 
-#### Tabnet e o DataSUS
+#### 📊 Tabnet e o DataSUS
 
 "O aplicativo TABNET é um tabulador genérico de domínio público que permite organizar dados de forma rápida conforme a consulta que se deseja tabular. Foi desenvolvido pelo DATASUS para gerar informações das bases de dados do Sistema Único de Saúde." <sub><sup>[http://www2.datasus.gov.br/DATASUS/APRESENTACAO/TABNET/Tutorial_tabNet_FINAL.pptx_html/html/index.html#2](http://www2.datasus.gov.br/DATASUS/APRESENTACAO/TABNET/Tutorial_tabNet_FINAL.pptx_html/html/index.html#2)</sup></sub>
 
@@ -90,7 +90,7 @@ A mensuração do estado de saúde da população é uma tradição em saúde p�
 
 Dados de morbidade, incapacidade, acesso a serviços, qualidade da atenção, condições de vida e fatores ambientais passaram a ser métricas utilizadas na construção de Indicadores de Saúde, que se traduzem em informação relevante para a quantificação e a avaliação das informações em saúde." <sub><sup>[http://www2.datasus.gov.br/DATASUS/index.php?area=02](http://www2.datasus.gov.br/DATASUS/index.php?area=02)</sup></sub>
 ---
-## Nota técnica e Origem dos dados
+## 📝 Nota técnica e Origem dos dados
 
 Os dados relacionados a cobertura vacinal nesse projeto, são oriundos do [Sistema de Avaliação do Programa de Imunizações - API](http://pni.datasus.gov.br/), sistema este gerido pela Coordenação Geral do Programa Nacional de Imunizações - CGPNI, do Departamento de Vigilância Epidemiológica, Secretaria de Vigilância em Saúde, do Ministério da Saúde, em conjunto com as Secretarias Estaduais de Saúde, suas regionais e as Secretarias Municipais de Saúde.
 
@@ -124,7 +124,37 @@ Esses dados coletados são referentes à seguinte tabela de Imunobiológicos com
 Com isso, foi obitido a seguinte coleção de dados (dataset) em CSV, que se encontra nesse projeto em [datasets/Tuberculose_Ano_UF_Confirmados.csv](datasets/Tuberculose_Ano_UF_Confirmados.csv)
  
  ---
- ## Levantamento de Hipóteses
+## 👨‍💻 Carregamento e Processamento dos dados
+
+Vamos fazer todo o carregamento e processamento dos dados utilizando o arquivo [notebooks/functions.py](notebooks/functions.py). <br/>
+Esse arquivo está separado em seções, sendo elas:
+ - Seção de funções adicionais para o processamento (mapeamento de dados e inserção de informações)
+ - Seção para definir funções de carregamento das bases de dados (read_csv e primeira tratativa dos datasets)
+ - Seção para definir funções de processamento das bases de dados (manipulações dos dados e exclusão de dado lixo)
+ - Seção para processamento de todos os dados (aplicação da desnormalização, mapeamento e ajustes finais)
+ - Além disso, temos uma seção para definição de funções para gerar gráficos
+ 
+Com essas funções definidas, básicamente o que precisa ser feito aqui, é chamar a função "all_data_processing" e salvar os valores dos dataframes para efetuar as plotagem dos gráficos.
+ 
+ ---
+---
+## 🤔 Levantamento de Hipóteses
+
+Irei deixar aqui, algumas suposições sobre o que acredito que possa acontecer quando efetuarmos a relação entre Cobertura vacinal e a quantidade absoluta de casos confirmados de tuberculose por estado.
+
+<p align="center">
+  <img alt="Homer Simpson se balançando pra trás em uma cadeira, com uma perna cruzada em cima da outra, colocando a mão no queixo e fazendo cara de pensativo" src="images/homer_hipotese.gif" />
+</p>
+
+⚠️ Deixo aqui também a observação que são só suposições e hipoteses, ou seja, não significa que de fato isso será confirmado ou comprovado, afinal, no mundo real existem diversas variáveis, e analisar a correlação entre Cobertura vacinal e quantidade absoluta de casos confirmados, é apenas uma estimativa que até nos dá uma noção macro do cenário, mas não especifica ou leva em conta outros fatores externos.
+
+ - Com o inicio das campanhas de vacinação, provavelmente haverá alguma redução no número absoluto de casos confirmados de tuberculose;
+ 
+ 
+ - Caso haja algum tipo de queda na proporção de vacinas aplicadas, o impacto no número absoluto de casos não necessariamente será imediato, visto que o desenvolvimento da doença pode levar um certo período, e temos que levar em conta também em que momento a pessoa foi exposta;
+ 
+ 
+ - Em estados maiores(como São Paulo), não necessariamente uma porcentagem alta de cobertura vacinal irá significar uma baixa no número absolutos de casos confirmado, dado que o fluxo de pesoas estrangeiras (seja de outro estado ou país) é maior.
  
  ---
  ## Visualização dos dados
