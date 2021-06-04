@@ -98,7 +98,7 @@ As Secretarias Municipais de Saúde coletam, por meio do Boletim Diário de Dose
 Boletins Mensais, com registro no Sistema API em todas as instâncias.
 
 A base de dados estadual é enviada mensalmente para a CGPNI/DEVEP/SVS/MS, quando então é consolidada a base nacional.
-<br/><sup><sub>Nota técnica completa em: [http://tabnet.datasus.gov.br/cgi/pni/Imun_cobertura_desde_1994.pdf](http://tabnet.datasus.gov.br/cgi/pni/Imun_cobertura_desde_1994.pdf) ou, caso o link chegue a ficar offline futuramente, ficará disponível localmente: [../technical_notes/Imun_cobertura_desde_1994.pdf](../technical_notes/Imun_cobertura_desde_1994.pdf)</sub></sup>
+<br/><sup><sub>Nota técnica completa em: [http://tabnet.datasus.gov.br/cgi/pni/Imun_cobertura_desde_1994.pdf](http://tabnet.datasus.gov.br/cgi/pni/Imun_cobertura_desde_1994.pdf) ou, caso o link chegue a ficar offline futuramente, ficará disponível localmente: [technical_notes/Imun_cobertura_desde_1994.pdf](technical_notes/Imun_cobertura_desde_1994.pdf)</sub></sup>
 
 Esses dados foram coletados no [Tabnet do PNI](http://tabnet.datasus.gov.br/cgi/tabcgi.exe?pni/cnv/cpniuf.def), aplicando os seguintes filtros:
  - Linha: Ano
