@@ -223,7 +223,7 @@ def all_data_processing():
     return df_cobertura_vacinais_aberto, df_casos_tuberculose_confirmados_aberto
 
 ## seção para definir funções de gráficos
-def grafico_cobertura_vacinais_casos_confirmados(estado: str, paleta_cobertura: str, paleta_casos: str):
+def grafico_cobertura_vacinais_casos_confirmados_por_estado(estado: str, paleta_cobertura: str, paleta_casos: str, ylim_casos : int):
     df_cobertura_vacinais, df_casos_tuberculose = all_data_processing()
 
     plt.figure(figsize=(10, 6))
@@ -245,6 +245,7 @@ def grafico_cobertura_vacinais_casos_confirmados(estado: str, paleta_cobertura: 
     ax = sns.lineplot(data=df_casos_tuberculose.query("estado == '" + estado + "' and ano > 2001 and ano <= 2019"), y="casos", x="ano",
                       hue="estado", palette=paleta_casos)
 
+    plt.ylim(0, ylim_casos)
     plt.xticks(rotation=30)
     ax.set_title("Casos confirmados de tuberculose - " + estado)
     ax.set_xlabel('Anos')
@@ -253,4 +254,101 @@ def grafico_cobertura_vacinais_casos_confirmados(estado: str, paleta_cobertura: 
     plt.grid(True, linestyle="--")
 
 
+    plt.show()
+    
+def grafico_cobertura_vacinais_casos_confirmados_por_regiao(regiao: str, paleta_cobertura: str, paleta_casos: str):
+    df_cobertura_vacinais, df_casos_tuberculose = all_data_processing()
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.lineplot(data=df_cobertura_vacinais.query("regiao == '" + regiao + "' and ano > 2001 and ano <= 2019"), y="cobertura",
+                      x="ano", hue="estado", palette=paleta_cobertura)
+
+    plt.xticks(rotation=30)
+    plt.ylim(0, 120)
+    ax.set_title("Cobertura vacinais - " + regiao)
+    ax.set_xlabel('Anos')
+    ax.set_ylabel('% de cobertura')
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    ax.yaxis.set_major_formatter(ticker.StrMethodFormatter("{x:,.0f}%"))
+    plt.grid(True, linestyle="--")
+
+
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.lineplot(data=df_casos_tuberculose.query("regiao == '" + regiao + "' and ano > 2001 and ano <= 2019"), y="casos", x="ano",
+                      hue="estado", palette=paleta_casos)
+
+    plt.xticks(rotation=30)
+    ax.set_title("Casos confirmados de tuberculose - " + regiao)
+    ax.set_xlabel('Anos')
+    ax.set_ylabel('Número de casos absolutos')
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.grid(True, linestyle="--")
+
+
+    plt.show()
+    
+    
+def grafico_cobertura_vacinais_casos_confirmados_macro_regiao(paleta_cobertura: str, paleta_casos: str):
+    df_cobertura_vacinais, df_casos_tuberculose = all_data_processing()
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.lineplot(data=df_cobertura_vacinais.query("ano > 2001 and ano <= 2019"), y="cobertura",
+                      x="ano", hue="regiao", palette=paleta_cobertura)
+
+    plt.xticks(rotation=30)
+    plt.ylim(0, 120)
+    ax.set_title("Cobertura vacinais - média por região")
+    ax.set_xlabel('Anos')
+    ax.set_ylabel('% de cobertura')
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    ax.yaxis.set_major_formatter(ticker.StrMethodFormatter("{x:,.0f}%"))
+    plt.grid(True, linestyle="--")
+
+
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.lineplot(data=df_casos_tuberculose.query("ano > 2001 and ano <= 2019"), y="casos", x="ano",
+                      hue="regiao", palette=paleta_casos)
+
+    plt.xticks(rotation=30)
+    ax.set_title("Casos confirmados de tuberculose - média por região")
+    ax.set_xlabel('Anos')
+    ax.set_ylabel('Número de casos absolutos')
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.grid(True, linestyle="--")
+
+
+    plt.show()
+    
+    
+def grafico_cobertura_vacinais_casos_confirmados_por_regiao_por_ano(regiao : str, paleta_cobertura : str, paleta_casos : str, ano : int):   
+    df_cobertura_vacinais, df_casos_tuberculose = all_data_processing()
+    ano = str(ano)
+    
+    plt.figure(figsize=(10, 6))
+    plt.xticks(rotation=30)
+    ax = sns.barplot(data=df_cobertura_vacinais.query("regiao == '" + regiao + "' and ano == '"+ano+"'"), y="cobertura",
+                          x="estado", hue="estado", palette=paleta_cobertura)
+    
+    plt.ylim(0, 120)
+    ax.set_title("Cobertura vacinais - " + regiao + " - em: " + ano)
+    ax.set_xlabel('estados')
+    ax.set_ylabel('% de cobertura')
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    ax.yaxis.set_major_formatter(ticker.StrMethodFormatter("{x:,.0f}%"))
+    plt.grid(True, linestyle="--")
+    
+    
+    
+    plt.figure(figsize=(10, 6))
+    plt.xticks(rotation=30)
+    ax = sns.barplot(data=df_casos_tuberculose.query("regiao == '" + regiao + "' and ano == '"+ano+"'"), y="casos",
+                          x="estado", hue="estado", palette=paleta_casos)
+    
+    ax.set_title("Casos confirmados de tuberculose - " + regiao + " - em: " + ano)
+    ax.set_xlabel('estados')
+    ax.set_ylabel('Número de casos absolutos')
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.grid(True, linestyle="--")
     plt.show()
