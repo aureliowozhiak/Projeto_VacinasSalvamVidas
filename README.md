@@ -26,6 +26,10 @@
  - Conclusão
  - Referências
  
+ Acesse o projeto:
+ 
+ - Notebook: [Projeto_VacinasSalvamVidas.ipynb](https://github.com/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/31e1510056de053a6c501cf3c2da1ca7d203ef1f/notebooks/Projeto_VacinasSalvamVidas.ipynb)
+  
  ---
  
 ## Objetivo do projeto
@@ -156,14 +160,21 @@ Irei deixar aqui, algumas suposições sobre o que acredito que possa acontecer 
  
  - Em estados maiores(como São Paulo), não necessariamente uma porcentagem alta de cobertura vacinal irá significar uma baixa no número absolutos de casos confirmado, dado que o fluxo de pesoas estrangeiras (seja de outro estado ou país) é maior.
  
- ---
- ## Visualização dos dados
  
  ---
- ## Pesquisa complementar
- 
- ---
- ## Conclusão
- 
- ---
- ## Referências
+ ## 📍 Conclusão
+ ##### Informações gerais:
+
+DATASUS: <[http://www2.datasus.gov.br/DATASUS/index.php?area=02](http://www2.datasus.gov.br/DATASUS/index.php?area=02)>
+
+Sistema de Informações do PNI: <[http://pni.datasus.gov.br/](http://pni.datasus.gov.br/)>
+
+Imunizações Cobertura – desde 1994 - Notas Técnicas: <[http://tabnet.datasus.gov.br/cgi/pni/Imun_cobertura_desde_1994.pdf](http://tabnet.datasus.gov.br/cgi/pni/Imun_cobertura_desde_1994.pdf) e [http://tabnet.datasus.gov.br/cgi/pni/%5Ccpnidescr.htm](http://tabnet.datasus.gov.br/cgi/pni/%5Ccpnidescr.htm)>
+
+Tutorial TABNET: <[http://www2.datasus.gov.br/DATASUS/APRESENTACAO/TABNET/Tutorial_tabNet_FINAL.pptx_html/html/index.html#2](http://www2.datasus.gov.br/DATASUS/APRESENTACAO/TABNET/Tutorial_tabNet_FINAL.pptx_html/html/index.html#2)>
+
+##### Origem dos dados:
+
+TABNET Imunizações: <[http://tabnet.datasus.gov.br/cgi/tabcgi.exe?pni/cnv/cpniuf.def](http://tabnet.datasus.gov.br/cgi/tabcgi.exe?pni/cnv/cpniuf.def)>
+
+TABNET Tuberculose: <[http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinannet/cnv/tubercbr.def](http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinannet/cnv/tubercbr.def)>
