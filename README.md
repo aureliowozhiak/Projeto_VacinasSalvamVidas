@@ -1,6 +1,6 @@
 ---
 # Projeto: Vacinas Salvam Vidas
-## Uma análise da eficâcia do Programa Nacional de Imunizações (PNI) e uma breve solução para o negacionismo do movimento antivacina
+## Uma análise da eficácia do Programa Nacional de Imunizações (PNI) e uma breve solução para o negacionismo do movimento antivacina
 
 
 <p align="center">
