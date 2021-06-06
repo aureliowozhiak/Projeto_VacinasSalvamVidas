@@ -140,7 +140,6 @@ Esse arquivo está separado em seções, sendo elas:
  
 Com essas funções definidas, básicamente o que precisa ser feito aqui, é chamar a função "all_data_processing" e salvar os valores dos dataframes para efetuar as plotagem dos gráficos.
  
- ---
 ---
 ## 🤔 Levantamento de Hipóteses
 
