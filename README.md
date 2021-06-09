@@ -167,7 +167,7 @@ Antes de "bater o martelo" em nossas conclusões, vamos verificar se nossas hipo
  - <u><i>Caso haja algum tipo de queda na proporção de vacinas aplicadas, o impacto no número absoluto de casos não necessariamente será imediato, visto que o desenvolvimento da doença pode levar um certo período, e temos que levar em conta também em que momento a pessoa foi exposta:</i></u> Verifcamos em diversos momentos que quase sempre que houve uma queda na porcentagem da cobertura vacinal, houve um reflexo no número de casos absolutos após um certo período;
  
   <p align="center">
-  <img alt="Desenho animado, Bob esponja batendo as mãos e retirando poeira delas com um sorisso e olhos fechados"  src="images/bob_fim.png" />
+  <img alt="Desenho animado, Bob esponja batendo as mãos e retirando poeira delas com um sorisso e olhos fechados"  src="images/bob_fim.gif" />
 </p>
 
 Com essas hipoteses verificadas e com nossa pesquisa complementar feita, podemos assumir que sim, as vacinas tem um impacto bem grande na redução de casos confirmados de tuberculose, mas além disso, podemos supor com uma certa segurança que as vacinas, de modo geral, ajudam na redução da disseminação de diversos virus pelo mundo todo, o que por consequência salva diversas vidas de doenças graves.
