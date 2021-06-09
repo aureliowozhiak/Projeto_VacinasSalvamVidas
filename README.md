@@ -157,11 +157,22 @@ Irei deixar aqui, algumas suposições sobre o que acredito que possa acontecer 
  - Caso haja algum tipo de queda na proporção de vacinas aplicadas, o impacto no número absoluto de casos não necessariamente será imediato, visto que o desenvolvimento da doença pode levar um certo período, e temos que levar em conta também em que momento a pessoa foi exposta;
  
  
- - Em estados maiores(como São Paulo), não necessariamente uma porcentagem alta de cobertura vacinal irá significar uma baixa no número absolutos de casos confirmado, dado que o fluxo de pesoas estrangeiras (seja de outro estado ou país) é maior.
+---
+## 📍 Conclusão
+
+Antes de "bater o martelo" em nossas conclusões, vamos verificar se nossas hipoteses iniciais fazem algum sentido!
+
+ - <u><i>Com o inicio das campanhas de vacinação, provavelmente haverá alguma redução no número absoluto de casos confirmados de tuberculose:</i></u> Realmente, após o inicio da campanha de vacinação houve essa redução no número absoluto de casos confirmados de tuberculose;
  
+ - <u><i>Caso haja algum tipo de queda na proporção de vacinas aplicadas, o impacto no número absoluto de casos não necessariamente será imediato, visto que o desenvolvimento da doença pode levar um certo período, e temos que levar em conta também em que momento a pessoa foi exposta:</i></u> Verifcamos em diversos momentos que quase sempre que houve uma queda na porcentagem da cobertura vacinal, houve um reflexo no número de casos absolutos após um certo período;
  
- ---
- ## 📍 Conclusão
+  <p align="center">
+  <img alt="Desenho animado, Bob esponja batendo as mãos e retirando poeira delas com um sorisso e olhos fechados"  src="images/bob_fim.png" />
+</p>
+
+Com essas hipoteses verificadas e com nossa pesquisa complementar feita, podemos assumir que sim, as vacinas tem um impacto bem grande na redução de casos confirmados de tuberculose, mas além disso, podemos supor com uma certa segurança que as vacinas, de modo geral, ajudam na redução da disseminação de diversos virus pelo mundo todo, o que por consequência salva diversas vidas de doenças graves.
+
+
  ##### Informações gerais:
 
 DATASUS: <[http://www2.datasus.gov.br/DATASUS/index.php?area=02](http://www2.datasus.gov.br/DATASUS/index.php?area=02)>
