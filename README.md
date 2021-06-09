@@ -28,7 +28,7 @@
  
  Acesse o projeto:
  
- - Notebook: [Projeto_VacinasSalvamVidas.ipynb](https://github.com/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/31e1510056de053a6c501cf3c2da1ca7d203ef1f/notebooks/Projeto_VacinasSalvamVidas.ipynb)
+ - Notebook: [Projeto_VacinasSalvamVidas.ipynb](https://github.com/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/main/notebooks/Projeto_VacinasSalvamVidas.ipynb)
   
  ---
  
