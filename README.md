@@ -35,7 +35,7 @@
  - Conclusão
  - Referências
  
-  <a href="https://github.com/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/main/notebooks/Projeto_VacinasSalvamVidas.ipynb">![](https://img.shields.io/badge/acessar_projeto-02569B?style=for-the-badge&logo=open&logoColor=white)<a/>
+  <a href="https://nbviewer.jupyter.org/github/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/21db7cd8ae0efc9e0ca871a1d73a402fdc2b4183/notebooks/Projeto_VacinasSalvamVidas.ipynb">![](https://img.shields.io/badge/acessar_projeto-02569B?style=for-the-badge&logo=open&logoColor=white)<a/>
  ---
  
 ## Objetivo do projeto
@@ -178,8 +178,8 @@ Antes de "bater o martelo" em nossas conclusões, vamos verificar se nossas hipo
 
 Com essas hipoteses verificadas e com nossa pesquisa complementar feita, podemos assumir que sim, as vacinas tem um impacto bem grande na redução de casos confirmados de tuberculose, mas além disso, podemos supor com uma certa segurança que as vacinas, de modo geral, ajudam na redução da disseminação de diversos virus pelo mundo todo, o que por consequência salva diversas vidas de doenças graves.
 
-   
-  <a href="https://github.com/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/main/notebooks/Projeto_VacinasSalvamVidas.ipynb">![](https://img.shields.io/badge/acessar_projeto-02569B?style=for-the-badge&logo=open&logoColor=white)<a/>
+
+  <a href="https://nbviewer.jupyter.org/github/aureliowozhiak/Projeto_VacinasSalvamVidas/blob/21db7cd8ae0efc9e0ca871a1d73a402fdc2b4183/notebooks/Projeto_VacinasSalvamVidas.ipynb">![](https://img.shields.io/badge/acessar_projeto-02569B?style=for-the-badge&logo=open&logoColor=white)<a/>
 
  ##### Informações gerais:
 
