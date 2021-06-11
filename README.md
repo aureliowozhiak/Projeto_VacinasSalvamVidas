@@ -1,4 +1,13 @@
----
+
+
+<a href="#">![](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)</a>
+<a href="#">![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)</a>
+<a href="#">![](https://img.shields.io/badge/Pandas-3776AB?style=for-the-badge&logo=pandas&logoColor=white)</a>
+
+<a href="https://www.linkedin.com/in/aureliowozhiak/">![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
+<a href="https://github.com/aureliowozhiak">![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)</a>
+
+
 # Projeto: Vacinas Salvam Vidas
 ## Uma análise da eficácia do Programa Nacional de Imunizações (PNI) e uma breve solução para o negacionismo do movimento antivacina
 
@@ -6,7 +15,7 @@
 <p align="center">
   <img alt="Na imagem animada, temos uma mão aplicando uma vacina de conhecimento para combater as fakenews" src="images/Vacina_contra_Fakenews.gif" />
  </p>
-
+ 
 ---
 ## 👉 Visão geral do projeto:
 
